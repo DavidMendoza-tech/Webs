@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+
+}
+body{
+    background: linear-gradient( #957BB6, #4D0AA3);
+}
+img{
+    display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 50%
+}
+section{
+position: relative;
+padding: 80px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+min-height: 100vh;
+}
+section .logo{
+    position: fixed;
+    top: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    z-index: 100;
+    cursor: pointer;
+}
+section .fondo{
+    position: absolute;
+    top: 0;
+    right: 60px;
+    height: 100%;
+}
+section .container{
+    position: relative;
+    max-width: 650px;
+    z-index: 1;
+    width: 55%;
+    
+    padding: 10px; 
+}
+section .container h2{
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+section .container p{
+    color: #fff;
+    width: 80%;
+    height: 100%;
+    font-size: 1.1em;
+    margin: 20px 0 10px;
+}
+section .container a{
+    color: #fff;
+    background: #094094;
+    font-size: 1em;
+    margin: 20px 0;
+    font-weight: 500;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+.copyrightText{
+    position: absolute;
+    bottom: 50px;
+    color:#048793 ;
+    font-size: 1.1em;
+    margin: 20px 0 10px;
+    background: #fff;
+   padding: 15px;
+   font-weight: 700;
+    box-shadow: 5px 7px 7px 7px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#C6CACA, #7B7E7E);
+}
+.menutogle{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #7F4BC3;
+    background-image: url(../img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+
+}
+.menutogle.activar{
+    background-image: url(../img/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+
+}
+.navegacion{
+    position: fixed;
+    top: 0;
+    left: calc(100% - 60px);
+    width: 100%;
+    height: 100%;
+     background: linear-gradient(#C6CACA, #7B7E7E);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    border-left: 3px solid #23024C;
+}
+.navegacion.activar{
+    left: 0px;
+     background: linear-gradient(#C6CACA, #7B7E7E);
+}
+.navegacion ul{
+    position: relative;
+
+}
+.navegacion ul li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+.navegacion ul li a{
+    font-size: 2.5em;
+    color: #111;
+    text-decoration: none;
+    font-weight: 300;
+}
+.navegacion ul li a:hover{
+    color: #097D6C;
+}
+.socialBar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialBar .emailBox{
+    position: absolute;
+   bottom: 20px;
+    transform: scale(0.6);
+}
+.socialBar ul{
+    position: relative;
+}
+.socialBar ul li{
+    position: relative;
+    list-style: none;
+}
+.socialBar ul li a{
+    position: relative;
+    display: inline-block;
+    transform: scale(0.6);
+}
+.socialBar .emailBox .fas{
+    font-size: 60px;
+    background: transparent;
+    color: #000;
+}
+.socialBar .emailBox .fas:hover{
+    cursor: pointer;
+    color: #097D6C;
+}
+@media (max-width: 767px) {
+    section{
+        height: 100%;
+        padding: 40px;
+
+    }
+    section .container{
+       background: rgb(0,0,0,0.4);
+       width:100%; 
+       padding: 10px;
+       box-shadow: 5px 7px 7px 7px rgba(0, 0, 0, 0.2);
+    }
+    section .container h2{
+        font-size: 30px;
+        width:100%;
+    }
+    section .container p{
+        text-align: justify;
+        padding: 10px;
+        width:100%;
+    }
+    .navegacion{
+        left: 100%;
+    }
+    section img.fondo{
+    display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%
+}
+.copyrightText{
+    display: block;
+    bottom: 50px;
+     box-shadow: 5px 7px 7px 7px rgba(0, 0, 0, 0.2);
+     background: linear-gradient(#C6CACA, #7B7E7E);
+    
+}
+
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+  <section>
+    <div class="logo">Webs</div>
+    <img src="img/F.png" class="fondo">
+    <div class="container">
+      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi odio quis, molestias, soluta corporis laborum? Laudantium autem officiis culpa, dolore voluptate tempore magnam minus soluta ex sapiente. Nesciunt, aliquam cumque?</p>
+      <a href="#">Lorem ipsum dolor.</a>
+    </div>
+    <p class="copyrightText">Webs</p>
+  </section>
+  <div class="menutogle" onclick="toggleMenu();"></div>
+  <div class="navegacion">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Work</a></li>
+      <li><a href="">Contac</a></li>
+    </ul>
+   <div class="socialBar">
+     <ul>
+       <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+       <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+       <li><a href=""><i class="fab fa-instagram"></i></a></li>
+     </ul>
+     <a href="#" class="emailBox"><i class="fas fa-envelope-square"></i></a>
+   </div>
+  </div>
+  <script type="text/javascript">
+    function toggleMenu(){
+      var menutogle = document.querySelector('.menutogle');
+      var navegacion = document.querySelector('.navegacion');
+      menutogle.classList.toggle('activar');
+      navegacion.classList.toggle('activar');
+
+    }
+  </script>
+</body>
+</html>
